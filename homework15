@@ -1,0 +1,138 @@
+#15 Homework for Lesson 15 from 01 Mar 2024 GUI
+
+Beed Seed – Optional report only 2 bugs, not 5
+Beet Seed  — get the basic skills down.
+Test the UI/UX of the Mayo Clinic website:
+In Google docs [or in Jira], create 2 bugs in compliance with all the requirements for bug reporting.
+Link the document with the created bugs in the LMS.
+Bug report 1 (SCRUM-80 with attachment)
+https://beetroot2024.atlassian.net/browse/SCRUM-80 
+
+Title: On the “Create Your Account” page some of the patient information text fields are not fully displayed in a range of window widths. 
+
+Description: The window widths of 483 to 625 do not display the full patient information text fields on the “Create Your Account” page (https://signup.mayoclinic.org/?applicationId=6fd03569-c4c9-439c-bbcb-931305671b6d).
+
+Steps to reproduce: 
+1. Go to the “Create Your Account” page: from home page, click on “Log in” and then on “Create Account”
+2. Minimize the web page to a width of between 483 and 625.
+3. Notice the patient information text fields are not fully visible.
+
+Actual result: Patient information text fields are not fully visible on window widths between 483 and 625.
+Expected result: Patient information text fields are fully visible at any window width at least equal to the widest text field.
+
+Severity: Low
+Priority: Low
+
+Environment: Windows 11, Firefox version 123.0 (64-bit).
+
+Bug report 2 (SCRUM-81 with attachment)
+https://beetroot2024.atlassian.net/browse/SCRUM-81 
+
+
+Mighty Beet
+Mighty Beet: get an all-round topics coverage by completing level three of the home assignment:
+2. Use Developer Tools to record the font used, its size, color, and background color of the following elements at Mayo Clinic:
+‘Log in to Patient Account’ in the header
+‘Learn more about Mayo Clinic’ button
+feedback rate buttons (numbers from 1 to 5, presented within feedback form which can be called by click on Feedback button (bottom-right corner))
+Language labels for language change
+‘Log in to Patient Account’ in the header
+Font-family:
+Formula with variables:
+
+var(--mc-typography-font-family-sans);
+
+mc-typography-font-family-sans = mayo-sans, times, sans-serif
+
+mayo-sans, times, sans-serif
+
+→ Computed: mayo-sans, times, sans-serif
+Font-size:
+Formula with variables:
+
+calc(var(--mc-typography-font-size-4x) / var(--mc-typography-font-size-root)* 1* 1rem);
+
+mc-typography-font-size-4x = 16
+mc-typography-font-size-root = 20
+
+calc(16 / var(20)* 1* 1rem);
+
+→ Computed: 16px
+
+Font color: 
+
+#080808
+
+→ Computed: rgb(8, 8, 8)
+
+Background color: 
+
+var(--background-color)
+
+→ Computed: rgba(0, 0, 0, 0)
+‘Learn more about Mayo Clinic’ button
+Note: I don’t see any such button. There’s a text ‘Learn more about Mayo Clinic locations or choose a specific location’, under which there’s a button with the text ‘Explore all locations’. I’m giving values for this button.
+Font-family: mayo-sans, times, sans-serif
+Font-size: 20px
+Font color: rgb(0, 87, 184)
+Background color: rgba(0, 0, 0, 0)
+
+Feedback rate buttons (numbers from 1 to 5, presented within feedback form which can be called by click on Feedback button (bottom-right corner))
+Font-family: ???
+Font-size: ???
+Font color: rgb(8, 8, 8)
+
+Background color: rgba(0, 0, 0, 0)
+
+Language labels for language change
+Font-family: mayo-sans, times, sans-serif
+Font-size: 16px
+Font color: rgb(8, 8, 8)
+
+Background color: rgba(0, 0, 0, 0)
+
+
+
+II. Additional Task:
+
+From the Mayo Clinic site locate the elements from the below screenshots.
+Provide 2 variants of CSS and XPath locators:
+
+1. Home Page -> Research & Education at Mayo Clinic -> Mayo Clinic School of
+Continuous Professional Development
+
+
+
+Xpath:
+//*[@id="content-area"]/div/div[3]/div/div/div/div/div[22]/a
+
+Full Xpath:
+/html/body/div[1]/div[1]/div[2]/div/div/div/div/div/div[3]/div/div/div/div/div[22]/a
+
+
+
+
+2. Home Page -> For Medical Professionals -> Mayo Clinic Alumni Association
+
+
+Xpath: 
+//*[@id="menu-item-30"]/a
+
+Full Xpath: 
+/html/body/header/nav/div/div[2]/ul[2]/li[3]/a
+
+
+
+3.Home Page -> Log in to Patient Account
+
+
+//*[@id="nothumbnail-notext"]/ul[2]/li[1]/button 
+
+/html/body/main/article/section[3]/div/div/div/ul[2]/li[1]/button 
+
+
+
+
+Created 2 bug reports in Jira - for the Beet seed homework:
+https://beetroot2024.atlassian.net/browse/SCRUM-80  
+https://beetroot2024.atlassian.net/browse/SCRUM-81 
